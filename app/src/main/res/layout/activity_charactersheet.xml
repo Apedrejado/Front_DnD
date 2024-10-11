@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Nome -->
+        <TextView
+            android:id="@+id/tvCharacterName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name: "
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Raça e Classe -->
+        <TextView
+            android:id="@+id/tvCharacterRaceClass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Race and Class"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Alinhamento e Background (opcionais) -->
+        <TextView
+            android:id="@+id/tvCharacterAlignment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alignment: "
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tvCharacterBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Background: "
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"
+            android:visibility="gone"/>
+
+        <!-- Pontos de Vida -->
+        <TextView
+            android:id="@+id/tvHitPoints"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hit Points: "
+            android:textSize="18sp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Atributos -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Attributes"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Exibição dos atributos -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Atributo Força -->
+            <TextView
+                android:id="@+id/tvStrength"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Strength: "
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- Atributo Destreza -->
+            <TextView
+                android:id="@+id/tvDexterity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dexterity: "
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- Atributo Constituição -->
+            <TextView
+                android:id="@+id/tvConstitution"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Constitution: "
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- Atributo Inteligência -->
+            <TextView
+                android:id="@+id/tvIntelligence"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Intelligence: "
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- Atributo Sabedoria -->
+            <TextView
+                android:id="@+id/tvWisdom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wisdom: "
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- Atributo Carisma -->
+            <TextView
+                android:id="@+id/tvCharisma"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Charisma: "
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
