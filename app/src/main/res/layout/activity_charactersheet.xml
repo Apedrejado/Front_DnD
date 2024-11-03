@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp">
@@ -7,14 +8,15 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
 
         <!-- Nome -->
         <TextView
             android:id="@+id/tvCharacterName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Name: "
+            android:text="Nome do Personagem"
             android:textSize="24sp"
             android:textStyle="bold"
             android:layout_marginBottom="16dp"/>
@@ -24,7 +26,7 @@
             android:id="@+id/tvCharacterRaceClass"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Race and Class"
+            android:text="Raça e Classe"
             android:textSize="18sp"
             android:layout_marginBottom="8dp"/>
 
@@ -33,26 +35,26 @@
             android:id="@+id/tvCharacterAlignment"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Alignment: "
-            android:textSize="16sp"
-            android:layout_marginBottom="8dp"
-            android:visibility="gone"/>
+            android:text="Alinhamento: "
+            android:textSize="18sp"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone"/>
 
         <TextView
             android:id="@+id/tvCharacterBackground"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Background: "
-            android:textSize="16sp"
-            android:layout_marginBottom="16dp"
-            android:visibility="gone"/>
+            android:textSize="18sp"
+        android:layout_marginBottom="16dp"
+        android:visibility="gone"/>
 
         <!-- Pontos de Vida -->
         <TextView
             android:id="@+id/tvHitPoints"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Hit Points: "
+            android:text="PV: 10"
             android:textSize="18sp"
             android:layout_marginBottom="16dp"/>
 
@@ -60,7 +62,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Attributes"
+            android:text="Atributos"
             android:textSize="20sp"
             android:textStyle="bold"
             android:layout_marginBottom="8dp"/>
@@ -71,60 +73,98 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <!-- Atributo Força -->
+            <!-- Atributos Individuais -->
             <TextView
                 android:id="@+id/tvStrength"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Strength: "
+                android:text="Str: 15"
                 android:textSize="16sp"
                 android:layout_marginBottom="8dp"/>
 
-            <!-- Atributo Destreza -->
             <TextView
                 android:id="@+id/tvDexterity"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Dexterity: "
+                android:text="Dex: 12"
                 android:textSize="16sp"
                 android:layout_marginBottom="8dp"/>
 
-            <!-- Atributo Constituição -->
             <TextView
                 android:id="@+id/tvConstitution"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Constitution: "
+                android:text="Con: 14"
                 android:textSize="16sp"
                 android:layout_marginBottom="8dp"/>
 
-            <!-- Atributo Inteligência -->
             <TextView
                 android:id="@+id/tvIntelligence"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Intelligence: "
+                android:text="Int: 13"
                 android:textSize="16sp"
                 android:layout_marginBottom="8dp"/>
 
-            <!-- Atributo Sabedoria -->
             <TextView
                 android:id="@+id/tvWisdom"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Wisdom: "
+                android:text="Wis: 11"
                 android:textSize="16sp"
                 android:layout_marginBottom="8dp"/>
 
-            <!-- Atributo Carisma -->
             <TextView
                 android:id="@+id/tvCharisma"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Charisma: "
+                android:text="Cha: 10"
                 android:textSize="16sp"
                 android:layout_marginBottom="8dp"/>
-
         </LinearLayout>
-    </LinearLayout>
+
+                <!-- Botões de ação -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="16dp"
+                    android:weightSum="2">
+
+                    <!-- Botão Excluir com Ícone de Lixeira -->
+                    <Button
+                        android:id="@+id/deleteCharacterButton"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableStart="@android:drawable/ic_menu_delete"
+                        android:text="Excluir"
+                        android:textColor="@android:color/white"
+                        android:backgroundTint="?attr/colorError"
+                        android:layout_marginEnd="8dp"/>
+
+                    <!-- Botão Alterar com Ícone de Editar -->
+                    <Button
+                        android:id="@+id/buttonAlterar"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableStart="@android:drawable/ic_menu_edit"
+                        android:text="Alterar"
+                        android:textColor="@android:color/white"
+                        android:backgroundTint="?attr/colorPrimary"
+                        android:layout_marginStart="8dp"/>
+                </LinearLayout>
+
+                <!-- Botão de Voltar para Main -->
+                <Button
+                    android:id="@+id/buttonBackToMain"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Voltar para Main"
+                    android:textColor="@android:color/white"
+                    android:backgroundTint="?attr/colorPrimary"
+                    android:layout_marginTop="16dp"/>
+            </LinearLayout>
 </ScrollView>

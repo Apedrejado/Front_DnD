@@ -17,14 +17,12 @@
             android:id="@+id/textViewTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="escolha seus atributos"
+            android:text="Escolha seus atributos"
             android:textSize="18sp"
             android:textStyle="bold"
             android:layout_gravity="center"
             android:layout_marginBottom="8dp"/>
 
-
-        <!-- Pontos Restantes -->
         <TextView
             android:id="@+id/textViewPontosRestantes"
             android:layout_width="wrap_content"
@@ -34,7 +32,6 @@
             android:textStyle="bold"
             android:layout_gravity="center"
             android:layout_marginBottom="8dp"/>
-
 
         <!-- Força -->
         <LinearLayout
@@ -48,7 +45,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="Força"
-                android:textSize="12sp"
+                android:textSize="18sp"
                 android:layout_marginEnd="8dp"
                 android:textStyle="bold"
                 android:layout_weight="1"
@@ -59,7 +56,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="-"
-                android:backgroundTint="@color/button_bg_selector_decrement"
+                android:background="@color/button_bg_selector_decrement"
                 android:enabled="false" />
 
             <TextView
@@ -67,16 +64,17 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="8"
-                android:textSize="12sp"
+                android:textSize="18sp"
                 android:layout_marginStart="8dp"
                 android:layout_marginEnd="8dp"
                 android:textStyle="bold"/>
+
             <Button
                 android:id="@+id/buttonIncrementForca"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="+"
-                android:backgroundTint="@color/button_bg_selector_increment"
+                android:background="@color/button_bg_selector_increment"
                 android:enabled="false" />
         </LinearLayout>
 
@@ -92,7 +90,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="Destreza"
-                android:textSize="12sp"
+                android:textSize="18sp"
                 android:layout_marginEnd="8dp"
                 android:textStyle="bold"
                 android:layout_weight="1"
@@ -103,16 +101,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="-"
-                android:backgroundTint="@color/button_bg_selector_decrement"
-                android:enabled="false"
-                />
+                android:background="@color/button_bg_selector_decrement"
+                android:enabled="false" />
 
             <TextView
                 android:id="@+id/valueTextViewDestreza"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="8"
-                android:textSize="12sp"
+                android:textSize="18sp"
                 android:layout_marginStart="8dp"
                 android:layout_marginEnd="8dp"
                 android:textStyle="bold"/>
@@ -122,9 +119,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="+"
-                android:backgroundTint="@color/button_bg_selector_increment"
+                android:background="@color/button_bg_selector_increment"
                 android:enabled="false" />
-
         </LinearLayout>
 
         <!-- Constituição -->
@@ -139,7 +135,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="Constituição"
-                android:textSize="12sp"
+                android:textSize="18sp"
                 android:layout_marginEnd="8dp"
                 android:textStyle="bold"
                 android:layout_weight="1"
@@ -149,16 +145,16 @@
                 android:id="@+id/buttonDecrementConstituicao"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:backgroundTint="@color/button_bg_selector_decrement"
-                android:enabled="false"
-                android:text="-"/>
+                android:text="-"
+                android:background="@color/button_bg_selector_decrement"
+                android:enabled="false" />
 
             <TextView
                 android:id="@+id/valueTextViewConstituicao"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="8"
-                android:textSize="12sp"
+                android:textSize="18sp"
                 android:layout_marginStart="8dp"
                 android:layout_marginEnd="8dp"
                 android:textStyle="bold"/>
@@ -168,7 +164,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="+"
-                android:backgroundTint="@color/button_bg_selector_increment"
+                android:background="@color/button_bg_selector_increment"
                 android:enabled="false" />
         </LinearLayout>
 
@@ -184,7 +180,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="Inteligência"
-                android:textSize="12sp"
+                android:textSize="18sp"
                 android:layout_marginEnd="8dp"
                 android:textStyle="bold"
                 android:layout_weight="1"
@@ -194,16 +190,16 @@
                 android:id="@+id/buttonDecrementInteligencia"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:backgroundTint="@color/button_bg_selector_decrement"
-                android:enabled="false"
-                android:text="-"/>
+                android:text="-"
+                android:background="@color/button_bg_selector_decrement"
+                android:enabled="false" />
 
             <TextView
                 android:id="@+id/valueTextViewInteligencia"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="8"
-                android:textSize="12sp"
+                android:textSize="18sp"
                 android:layout_marginStart="8dp"
                 android:layout_marginEnd="8dp"
                 android:textStyle="bold"/>
@@ -213,7 +209,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="+"
-                android:backgroundTint="@color/button_bg_selector_increment"
+                android:background="@color/button_bg_selector_increment"
                 android:enabled="false" />
         </LinearLayout>
 
@@ -229,7 +225,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="Sabedoria"
-                android:textSize="12sp"
+                android:textSize="18sp"
                 android:layout_marginEnd="8dp"
                 android:textStyle="bold"
                 android:layout_weight="1"
@@ -239,16 +235,16 @@
                 android:id="@+id/buttonDecrementSabedoria"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:backgroundTint="@color/button_bg_selector_decrement"
-                android:enabled="false"
-                android:text="-"/>
+                android:text="-"
+                android:background="@color/button_bg_selector_decrement"
+                android:enabled="false" />
 
             <TextView
                 android:id="@+id/valueTextViewSabedoria"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="8"
-                android:textSize="12sp"
+                android:textSize="18sp"
                 android:layout_marginStart="8dp"
                 android:layout_marginEnd="8dp"
                 android:textStyle="bold"/>
@@ -258,7 +254,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="+"
-                android:backgroundTint="@color/button_bg_selector_increment"
+                android:background="@color/button_bg_selector_increment"
                 android:enabled="false" />
         </LinearLayout>
 
@@ -275,65 +271,71 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="Carisma"
-                android:textSize="12sp"
+                android:textSize="18sp"
+                android:layout_marginEnd="8dp"
                 android:textStyle="bold"
                 android:layout_weight="1"
-                android:gravity="start"
-                android:layout_marginEnd="8dp" />
+                android:gravity="start"/>
 
             <Button
                 android:id="@+id/buttonDecrementCarisma"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:backgroundTint="@color/button_bg_selector_decrement"
-                android:enabled="false"
-                android:text="-" />
+                android:text="-"
+                android:background="@color/button_bg_selector_decrement"
+                android:enabled="false" />
 
             <TextView
                 android:id="@+id/valueTextViewCarisma"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="8"
+                android:textSize="18sp"
                 android:layout_marginStart="8dp"
                 android:layout_marginEnd="8dp"
-                android:text="8"
-                android:textSize="12sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"/>
 
             <Button
                 android:id="@+id/buttonIncrementCarisma"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="+"
-                android:backgroundTint="@color/button_bg_selector_increment"
+                android:background="@color/button_bg_selector_increment"
                 android:enabled="false" />
         </LinearLayout>
 
 
-        <!-- LinearLayout para os botões de Voltar e Concluir -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:gravity="center"
-            android:layout_marginTop="24dp">
+            android:layout_marginTop="16dp"
+            android:weightSum="2">
 
-            <!-- Botão de voltar -->
             <Button
                 android:id="@+id/buttonBack"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="16dp"
-                android:text="Voltar" />
-
-            <!-- Botão de concluir -->
+                android:layout_weight="1"
+                android:drawableStart="@android:drawable/ic_menu_delete"
+                android:text="Voltar"
+                android:textColor="@android:color/white"
+                android:backgroundTint="?attr/colorPrimary"
+                android:layout_marginEnd="8dp"/>
+            s
             <Button
                 android:id="@+id/buttonConcluir"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:padding="16dp"
+                android:layout_weight="1"
+                android:drawableStart="@android:drawable/ic_menu_delete"
                 android:text="Concluir"
-               />
-        </LinearLayout>
+                android:textColor="@android:color/white"
+                android:backgroundTint="?attr/colorPrimary"
+                android:layout_marginEnd="8dp"/>
 
+        </LinearLayout>
     </LinearLayout>
+
 </ScrollView>

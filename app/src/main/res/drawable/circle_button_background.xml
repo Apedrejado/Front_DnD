@@ -1,5 +1,15 @@
-<shape xmlns:android="http://schemas.android.com/apk/res/android">
-    <solid android:color="@android:color/holo_blue_light" />
-    <!-- O raio é aumentado para garantir que o botão fique completamente circular -->
-    <corners android:radius="100dp" />
-</shape>
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="oval">
+            <solid android:color="@color/red" />
+            <size android:width="48dp" android:height="48dp" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/red" />
+            <size android:width="48dp" android:height="48dp" />
+        </shape>
+    </item>
+</selector>
